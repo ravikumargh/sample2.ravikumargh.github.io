@@ -12,6 +12,7 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/progress-bar.css" rel="stylesheet" />
+    <link href="css/thumbnail.css" rel="stylesheet" />
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -166,120 +167,264 @@
     <section id="recent-works">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <h3>Our Latest Project</h3>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                    <div class="btn-group">
-                        <a class="btn btn-danger" href="#scroller" data-slide="prev"><i class="icon-angle-left"></i></a>
-                        <a class="btn btn-danger" href="#scroller" data-slide="next"><i class="icon-angle-right"></i></a>
-                    </div>
-                    <p class="gap"></p>
+                <div class="row rowhead">
+                    <div class="col-md-9"><h3>Our Latest Project</h3></div>
+                    <div class="col-md-1 seeAll"><a href="#">See all</a></div>   
+                    <!--<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <div class="btn-group">
+            <a class="btn btn-danger" href="#scroller" data-slide="prev"><i class="icon-angle-left"></i></a>
+            <a class="btn btn-danger" href="#scroller" data-slide="next"><i class="icon-angle-right"></i></a>
+        </div>
+        <p class="gap"></p>-->
                 </div>
-                <div class="col-md-9">
+                <div class="row">
                     <div id="scroller" class="carousel slide">
                         <div class="carousel-inner">
-                            <div class="item active">
-                                <div class="row">
-                                    <div class="col-xs-4">
-                                        <div class="portfolio-item">
-                                            <div class="item-inner">
-                                                <!--<img class="img-responsive" src="images/portfolio/recent/item1.png" alt="">-->
-                                                <div class="thumbnail" style="padding: 0">
-                                                    <div style="padding:4px">
-                                                        <img alt="300x200" style="width: 100%" src="200x150">
+                            <div class="container">
+                                <div class="row-fluid">
+                                    <ul class="thumbnails">
+                                        <li class="span3">
+                                            <div class="thumbnail" style="padding: 0">
+                                                <div class="row" style="padding:4px">
+                                                    <!--<img alt="300x200" style="width: 100%" src="200x150">-->
+                                                    <div class="callout">
+                                                        <h3 class="maleAvtar">team </h3>
+                                                        <h4><b>Lorem Ipsum 1</b></h4>
+                                                        <p class="convictName">by Ravikumar</p>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an... <a href="#">See more</a>  </p>
                                                     </div>
-                                                    <div class="caption">
-                                                        <h2>Project A</h2>
-                                                        <p>My project description</p>
-                                                        <p><i class="icon icon-map-marker"></i> Place, Country</p>
-                                                    </div>
-                                                    <div class="modal-footer" style="text-align: left">
-                                                        <div class="progress progress-striped active" style="background: #ddd">
-                                                            <div class="bar" style="width: 60%;"></div>
-                                                        </div>
-                                                        <div class="row-fluid">
-                                                            <div class="span4"><b>60%</b><br><small>FUNDED</small></div>
-                                                            <div class="span4"><b>$400</b><br><small>PLEDGED</small></div>
-                                                            <div class="span4"><b>18</b><br><small>DAYS</small></div>
-                                                        </div>
-                                                    </div>
+
+                                                    <!--<img src="images/male1.png" />
+                    <h2>...........</h2>
+                    <p>Description lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>-->
+
                                                 </div>
-                                                <h5>
-                                                    Nova - Corporate site template
-                                                </h5>
-                                                <div class="overlay">
-                                                    <a class="preview btn btn-danger" title="Malesuada fames ac turpis egestas" href="images/portfolio/full/item1.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                <div class="row caption">
+                                                    <p><i class="icon icon-map-marker"></i> Place, Country</p>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>                            
-                                    <div class="col-xs-4">
-                                        <div class="portfolio-item">
-                                            <div class="item-inner">
-                                                <!--<img class="img-responsive" src="images/portfolio/recent/item3.png" alt="">-->
-                                                <div class="thumbnail" style="padding: 0">
-                                                    <div style="padding:4px">
-                                                        <img alt="300x200" style="width: 100%" src="200x150">
+
+                                                <div class="modal-footer" style="text-align: left">
+                                                    <div class="progress" style="background: #ddd">
+                                                        <div class="bar" style="width: 60%;"></div>
                                                     </div>
-                                                    <div class="caption">
-                                                        <h2>Project B</h2>
-                                                        <p>My project description</p>
-                                                        <p><i class="icon icon-map-marker"></i> Place, Country</p>
+                                                    <div class="row-fluid">
+                                                        <div class="span4"><b>60%</b><br><small>FUNDED</small></div>
+                                                        <div class="span4"><b>$400</b><br><small>PLEDGED</small></div>
+                                                        <div class="span4"><b>18</b><br><small>DAYS</small></div>
                                                     </div>
-                                                    <div class="modal-footer" style="text-align: left">
-                                                        <div class="progress" style="background: #ddd">
-                                                            <div class="bar bar-success" style="width: 100%;"></div>
-                                                        </div>
-                                                        <div class="row-fluid">
-                                                            <div class="span4"><b>250%</b><br><small>FUNDED</small></div>
-                                                            <div class="span4"><b>$50000</b><br><small>PLEDGED</small></div>
-                                                            <div class="span4"><b>FUNDED</b><br><small>AUG 5</small></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <h5>
-                                                    Fornax - Apps site template
-                                                </h5>
-                                                <div class="overlay">
-                                                    <a class="preview btn btn-danger" title="Malesuada fames ac turpis egestas" href="images/portfolio/full/item1.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
                                                 </div>
                                             </div>
+                                        </li>
+                                        <li class="span3">
+                                            <div class="thumbnail" style="padding: 0">
+                                                <div class="row" style="padding:4px">
+                                                    <!--<img alt="300x200" style="width: 100%" src="200x150">-->
+                                                    <div class="callout">
+                                                        <h3 class="femaleAvtar">team </h3>
+                                                        <h4><b>Lorem Ipsum 2</b></h4>
+                                                        <p class="convictName">by Akshay</p>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown .  </p>
+                                                    </div>
+
+                                                    <!--<img src="images/male1.png" />
+                    <h2>...........</h2>
+                    <p>Description lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>-->
+
+                                                </div>
+                                                <div class="row caption">
+                                                    <p><i class="icon icon-map-marker"></i> Place, Country</p>
+                                                </div>
+
+                                                <div class="modal-footer" style="text-align: left">
+                                                    <div class="progress" style="background: #ddd">
+                                                        <div class="progress-success" style="width: 100%;"></div>
+                                                    </div>
+                                                    <div class="row-fluid">
+                                                        <div class="span4"><b>250%</b><br><small>FUNDED</small></div>
+                                                        <div class="span4"><b>$50000</b><br><small>PLEDGED</small></div>
+                                                        <div class="span4"><b>FUNDED</b><br><small>AUG 5</small></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="span3">
+                                            <div class="thumbnail" style="padding: 0">
+                                                <div class="row" style="padding:4px">
+                                                    <!--<img alt="300x200" style="width: 100%" src="200x150">-->
+                                                    <div class="callout">
+                                                        <h3 class="maleAvtar">team </h3>
+                                                        <h4><b>Lorem Ipsum 3</b></h4>
+                                                        <p class="convictName">by Shetty</p>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown .  </p>
+                                                    </div>
+
+                                                    <!--<img src="images/male1.png" />
+                    <h2>...........</h2>
+                    <p>Description lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>-->
+
+                                                </div>
+                                                <div class="row caption">
+                                                    <p><i class="icon icon-map-marker"></i> Place, Country</p>
+                                                </div>
+
+                                                <div class="modal-footer" style="text-align: left">
+                                                    <div class="progress" style="background: #ddd">
+                                                        <div class="progress-danger" style="width: 30%;"></div>
+                                                    </div>
+                                                    <div class="row-fluid">
+                                                        <div class="span4"><b>60%</b><br><small>FUNDED</small></div>
+                                                        <div class="span4"><b>$1000</b><br><small>PLEDGED</small></div>
+                                                        <div class="span4"><b>NOT FUNDED</b><br><small></small></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!--<li class="span3">
+            <div class="thumbnail" style="padding: 0">
+                <div class="col-md-4" style="padding:4px">
+                    <img src="images/female1.png" />
+                </div>
+                <div class="col-md-8 caption">
+                    <h2>..........</h2>
+                    <p>Description lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <p><i class="icon icon-map-marker"></i> Place, Country</p>
+                </div>
+                <div class="modal-footer" style="text-align: left">
+                    <div class="progress" style="background: #ddd">
+                        <div class="bar bar-success" style="width: 100%;"></div>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span4"><b>250%</b><br><small>FUNDED</small></div>
+                        <div class="span4"><b>$50000</b><br><small>PLEDGED</small></div>
+                        <div class="span4"><b>FUNDED</b><br><small>AUG 5</small></div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="span3">
+            <div class="thumbnail" style="padding: 0">
+                <div class="col-md-4" style="padding:4px">
+                    <img src="images/male1.png" />
+                    <h2>.......... C</h2>
+                    <p>Description lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <p><i class="icon icon-map-marker"></i> Place, Country</p>
+                </div>
+                <div class="col-md-8 caption">
+                </div>
+                <div class="modal-footer" style="text-align: left">
+                    <div class="progress" style="background: #ddd">
+                        <div class="bar bar-danger" style="width: 30%;"></div>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span4"><b>60%</b><br><small>FUNDED</small></div>
+                        <div class="span4"><b>$1000</b><br><small>PLEDGED</small></div>
+                        <div class="span4"><b>NOT FUNDED</b><br><small></small></div>
+                    </div>
+                </div>
+            </div>
+        </li>-->
+                                    </ul>
+                                    <!--<div class="col-xs-4">
+                            <div class="portfolio-item">
+                                <div class="item-inner">
+                                     <img class="img-responsive" src="images/portfolio/recent/item1.png" alt="">
+                                    <div class="thumbnail" style="padding: 0">
+                                        <div style="padding:4px">
+                                            <img alt="300x200" style="width: 100%" src="200x150">
                                         </div>
-                                    </div>                            
-                                    <div class="col-xs-4">
-                                        <div class="portfolio-item">
-                                            <div class="item-inner">
-                                                <!--<img class="img-responsive" src="images/portfolio/recent/item2.png" alt="">-->
-                                                <div class="thumbnail" style="padding: 0">
-                                                    <div style="padding:4px">
-                                                        <img alt="300x200" style="width: 100%" src="200x150">
-                                                    </div>
-                                                    <div class="caption">
-                                                        <h2>Project C</h2>
-                                                        <p>My project description</p>
-                                                        <p><i class="icon icon-map-marker"></i> Place, Country</p>
-                                                    </div>
-                                                    <div class="modal-footer" style="text-align: left">
-                                                        <div class="progress" style="background: #ddd">
-                                                            <div class="bar bar-danger" style="width: 30%;"></div>
-                                                        </div>
-                                                        <div class="row-fluid">
-                                                            <div class="span4"><b>60%</b><br><small>FUNDED</small></div>
-                                                            <div class="span4"><b>$1000</b><br><small>PLEDGED</small></div>
-                                                            <div class="span4"><b>NOT FUNDED</b><br><small></small></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <h5>
-                                                    Flat Theme - Business Theme
-                                                </h5>
-                                                <div class="overlay">
-                                                    <a class="preview btn btn-danger" title="Malesuada fames ac turpis egestas" href="images/portfolio/full/item1.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
-                                                </div>
+                                        <div class="caption">
+                                            <h2>Project A</h2>
+                                            <p>My project description</p>
+                                            <p><i class="icon icon-map-marker"></i> Place, Country</p>
+                                        </div>
+                                        <div class="modal-footer" style="text-align: left">
+                                            <div class="progress progress-striped active" style="background: #ddd">
+                                                <div class="bar" style="width: 60%;"></div>
+                                            </div>
+                                            <div class="row-fluid">
+                                                <div class="span4"><b>60%</b><br><small>FUNDED</small></div>
+                                                <div class="span4"><b>$400</b><br><small>PLEDGED</small></div>
+                                                <div class="span4"><b>18</b><br><small>DAYS</small></div>
                                             </div>
                                         </div>
                                     </div>
-                                </div><!--/.row-->
+                                    <h5>
+                                        Nova - Corporate site template
+                                    </h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-danger" title="Malesuada fames ac turpis egestas" href="images/portfolio/full/item1.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="portfolio-item">
+                                <div class="item-inner">
+                                    <img class="img-responsive" src="images/portfolio/recent/item3.png" alt="">
+                                    <div class="thumbnail" style="padding: 0">
+                                        <div style="padding:4px">
+                                            <img alt="300x200" style="width: 100%" src="200x150">
+                                        </div>
+                                        <div class="caption">
+                                            <h2>Project B</h2>
+                                            <p>My project description</p>
+                                            <p><i class="icon icon-map-marker"></i> Place, Country</p>
+                                        </div>
+                                        <div class="modal-footer" style="text-align: left">
+                                            <div class="progress" style="background: #ddd">
+                                                <div class="bar bar-success" style="width: 100%;"></div>
+                                            </div>
+                                            <div class="row-fluid">
+                                                <div class="span4"><b>250%</b><br><small>FUNDED</small></div>
+                                                <div class="span4"><b>$50000</b><br><small>PLEDGED</small></div>
+                                                <div class="span4"><b>FUNDED</b><br><small>AUG 5</small></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h5>
+                                        Fornax - Apps site template
+                                    </h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-danger" title="Malesuada fames ac turpis egestas" href="images/portfolio/full/item1.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="portfolio-item">
+                                <div class="item-inner">
+                                     <img class="img-responsive" src="images/portfolio/recent/item2.png" alt="">
+                                    <div class="thumbnail" style="padding: 0">
+                                        <div style="padding:4px">
+                                            <img alt="300x200" style="width: 100%" src="200x150">
+                                        </div>
+                                        <div class="caption">
+                                            <h2>Project C</h2>
+                                            <p>My project description</p>
+                                            <p><i class="icon icon-map-marker"></i> Place, Country</p>
+                                        </div>
+                                        <div class="modal-footer" style="text-align: left">
+                                            <div class="progress" style="background: #ddd">
+                                                <div class="bar bar-danger" style="width: 30%;"></div>
+                                            </div>
+                                            <div class="row-fluid">
+                                                <div class="span4"><b>60%</b><br><small>FUNDED</small></div>
+                                                <div class="span4"><b>$1000</b><br><small>PLEDGED</small></div>
+                                                <div class="span4"><b>NOT FUNDED</b><br><small></small></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h5>
+                                        Flat Theme - Business Theme
+                                    </h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-danger" title="Malesuada fames ac turpis egestas" href="images/portfolio/full/item1.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+                                </div>
+                                <!--/.row-->
                             </div><!--/.item-->
                             <div class="item">
                                 <div class="row">
@@ -348,7 +493,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>                            
+                                    </div>
                                     <div class="col-xs-4">
                                         <div class="portfolio-item">
                                             <div class="item-inner">
@@ -383,7 +528,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div><!--/.item-->
+                            </div>
+                            <!--/.item-->
                         </div>
                     </div>
                 </div>
